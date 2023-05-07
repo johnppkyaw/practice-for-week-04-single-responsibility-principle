@@ -43,7 +43,6 @@ function bakeAndSellPies(pieType, pieQuantity, profitMargin) {
   //Calculate costs to make all pies
   const totalCost = calculateCosts(recipe, pieQuantity);
 
-
   // Print the total revenue calculated using the given profitMargin
   const revenue = totalCost * (profitMargin || 1.2);
   console.log(`Sold ${pieQuantity} pies for $${revenue.toFixed(2)}!`);
